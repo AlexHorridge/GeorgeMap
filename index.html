@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-    <title>Title</title>
+    <title>Geocaching</title>
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
@@ -46,7 +46,8 @@
         );
 
         var marker = new mapboxgl.Marker({
-            draggable: true
+            draggable: true,
+            color: '#02874D'
             })
             .setLngLat([-3.0886, 54.4609])
             .addTo(map);
