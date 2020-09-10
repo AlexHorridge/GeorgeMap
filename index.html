@@ -14,10 +14,6 @@
         body {
             font-family: 'Roboto', sans-serif;
         }
-        
-        .mapboxgl-marker {
-            background-image: url("https://vignette.wikia.nocookie.net/geocaching/images/c/ce/Traditional_new.png/revision/latest?cb=20160118040917.png");
-        }
     </style>
 </head>
 <body  style='width: 100vw; height:100vh; overflow: hidden; margin: 0;'>
@@ -64,6 +60,8 @@
             }
 
         marker.on('dragend', onDragEnd);
+        
+        document.getElementsByClassName('mapboxgl-marker').innerHTML = "<img src="Traditional_new.svg" height="87" width="100" />";
     </script>
 
     <div id="details-tab" style="position: absolute; left: 0%; bottom: 0%; width: 100%; height: 150px; border-top-left-radius: 25px; border-top-right-radius: 25px; background-color: azure;  z-index: 2; pointer-events: all; ">
